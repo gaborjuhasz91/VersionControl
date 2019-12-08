@@ -33,6 +33,7 @@
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnCsv = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -64,7 +65,7 @@
             // 
             this.btnAdd.Location = new System.Drawing.Point(417, 78);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(322, 23);
+            this.btnAdd.Size = new System.Drawing.Size(322, 34);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "button1";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -72,19 +73,30 @@
             // 
             // btnCsv
             // 
-            this.btnCsv.Location = new System.Drawing.Point(417, 107);
+            this.btnCsv.Location = new System.Drawing.Point(417, 118);
             this.btnCsv.Name = "btnCsv";
-            this.btnCsv.Size = new System.Drawing.Size(322, 23);
+            this.btnCsv.Size = new System.Drawing.Size(322, 37);
             this.btnCsv.TabIndex = 6;
             this.btnCsv.Text = "button1";
             this.btnCsv.UseVisualStyleBackColor = true;
             this.btnCsv.Click += new System.EventHandler(this.BtnCsv_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Location = new System.Drawing.Point(417, 161);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(322, 32);
+            this.btnDel.TabIndex = 7;
+            this.btnDel.Text = "btnDel";
+            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.BtnDel_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnCsv);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtFullName);
@@ -105,6 +117,7 @@
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCsv;
+        private System.Windows.Forms.Button btnDel;
     }
 }
 
